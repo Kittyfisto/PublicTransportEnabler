@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Threading.Tasks;
 using PublicTransportEnabler.DataModel;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
 using Location = PublicTransportEnabler.Model.Location;
 using Point = PublicTransportEnabler.Model.Point;
 
-namespace PublicTransportEnabler.Contract
+namespace PublicTransportEnabler
 {
 	public interface INetworkProvider
 	{
@@ -16,17 +17,18 @@ namespace PublicTransportEnabler.Contract
 		bool HasCapabilities(IEnumerable<Capability> capabilities);
 
 		[Pure]
-		OuterCoordInfoRequest QueryNearbyStations(Location location, int maxDistance, int maxStations);
+		Task<OuterCoordInfoRequest> QueryNearbyStationsAsync(Location location, int maxDistance, int maxStations);
 
 		[Pure]
-		DepartureMonitorRequest QueryDepartures(int stationId, int maxDepartures, bool equivs);
+		Task<DepartureMonitorRequest> QueryDeparturesAsync(int stationId, int maxDepartures, bool equivs);
 
-		StopFinderRequest AutocompleteStations(string constraint);
+		[Pure]
+		Task<StopFinderRequest> AutocompleteStationsAsync(string constraint);
 
 		IEnumerable<Product> DefaultProducts();
 
 		[Pure]
-		TripRequest QueryConnections(Location from, Location via, Location to, DateTime date, bool dep,
+		Task<TripRequest> QueryConnectionsAsync(Location from, Location via, Location to, DateTime date, bool dep,
 		                             int numConnections, List<Product> products, WalkSpeed walkSpeed,
 		                             Accessibility accessibility,
 		                             HashSet<Option> options);

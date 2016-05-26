@@ -1,4 +1,4 @@
-﻿namespace PublicTransportEnabler.Contract
+﻿namespace PublicTransportEnabler
 {
 	public interface IQueryConnectionsContext
 	{

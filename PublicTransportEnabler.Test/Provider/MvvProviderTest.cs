@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using FluentAssertions;
-using Moq;
 using NUnit.Framework;
-using PublicTransportEnabler.Contract;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
 using PublicTransportEnabler.Provider;
@@ -23,14 +21,14 @@ namespace PublicTransportEnabler.Test.Provider
 		}
 
 		[Test]
-		public void TestQueryNearbyStations1()
+		public void TestQueryNearbyStationsAsync1()
 		{
 			var provider = new MvvProvider(_client);
 			var ostbahnhof = Location.FromWgs84(LocationType.STATION, 0, 48.127619, 11.604669);
-			var response = provider.QueryNearbyStations(ostbahnhof, 1000, 10);
+			var response = provider.QueryNearbyStationsAsync(ostbahnhof, 1000, 10);
 
 			response.Should().NotBeNull();
-			var coordInfo = response.CoordInfo;
+			var coordInfo = response.Result.CoordInfo;
 			coordInfo.Should().NotBeNull();
 			var items = coordInfo.CoordInfoItemList;
 			items.Should().NotBeNull();
@@ -41,14 +39,14 @@ namespace PublicTransportEnabler.Test.Provider
 		}
 
 		[Test]
-		public void TestQueryNearbyStations2()
+		public void TestQueryNearbyStationsAsync2()
 		{
 			var provider = new MvvProvider(_client);
 			var ostbahnhof = Location.FromWgs84(LocationType.STATION, 0, 48.099198, 11.787178);
-			var response = provider.QueryNearbyStations(ostbahnhof, 1000, 10);
+			var response = provider.QueryNearbyStationsAsync(ostbahnhof, 1000, 10);
 
 			response.Should().NotBeNull();
-			var coordInfo = response.CoordInfo;
+			var coordInfo = response.Result.CoordInfo;
 			coordInfo.Should().NotBeNull();
 			var items = coordInfo.CoordInfoItemList;
 			items.Should().NotBeNull();
@@ -59,10 +57,10 @@ namespace PublicTransportEnabler.Test.Provider
 		}
 
 		[Test]
-		public void TestQueryConnections1()
+		public void TestQueryConnectionsAsync1()
 		{
 			var provider = new MvvProvider(_client);
-			var connections = provider.QueryConnections(Location.FromId(LocationType.STATION, 1000005),
+			var connections = provider.QueryConnectionsAsync(Location.FromId(LocationType.STATION, 1000005),
 			                                            null,
 			                                            Location.FromId(LocationType.STATION, 1004010),
 			                                            DateTime.Now,
@@ -83,12 +81,12 @@ namespace PublicTransportEnabler.Test.Provider
 		}
 
 		[Test]
-		public void TestQueryDepartures()
+		public void TestQueryDeparturesAsync()
 		{
 			var provider = new MvvProvider(_client);
-			var departures = provider.QueryDepartures(1000005, 10, true);
+			var departures = provider.QueryDeparturesAsync(1000005, 10, true);
 			departures.Should().NotBeNull();
-			var list = departures.DepartureList;
+			var list = departures.Result.DepartureList;
 			list.Should().NotBeNull();
 			list.Length.Should().Be(10, "Because we requested 10 departures");
 			

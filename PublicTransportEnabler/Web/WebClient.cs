@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using PublicTransportEnabler.Contract;
 
 namespace PublicTransportEnabler.Web
 {
@@ -31,22 +30,22 @@ namespace PublicTransportEnabler.Web
 		public void ResetState()
 		{}
 
-		public string Scrape(string url)
+		public Task<string> Scrape(string url)
 		{
 			return Scrape(url, null, null, null);
 		}
 
-		public string Scrape(string url, string postRequest, string encoding, string sessionCookieName)
+		public Task<string> Scrape(string url, string postRequest, string encoding, string sessionCookieName)
 		{
 			return Scrape(url, postRequest, encoding, sessionCookieName, 3);
 		}
 
-		public string Scrape(string urlStr, string postRequest, string encoding, string sessionCookieName, int tries)
+		public Task<string> Scrape(string urlStr, string postRequest, string encoding, string sessionCookieName, int tries)
 		{
 			return Scrape(urlStr, postRequest, encoding, sessionCookieName, null, 3);
 		}
 
-		public string Scrape(string urlStr, string postRequest, string encoding, string sessionCookieName, string httpReferrer,
+		public Task<string> Scrape(string urlStr, string postRequest, string encoding, string sessionCookieName, string httpReferrer,
 		                     int tries)
 		{
 			if (encoding == null)
@@ -78,10 +77,12 @@ namespace PublicTransportEnabler.Web
 				task = _client.GetAsync(urlStr);
 			}
 
-			task.Wait();
-			HttpResponseMessage result = task.Result;
-			var msg = result.Content.ReadAsStringAsync().Result;
-			return msg;
+			return task.ContinueWith(t =>
+				{
+					HttpResponseMessage result = t.Result;
+					var msg = result.Content.ReadAsStringAsync().Result;
+					return msg;
+				});
 		}
 
 		public string ResolveEntities(string str)

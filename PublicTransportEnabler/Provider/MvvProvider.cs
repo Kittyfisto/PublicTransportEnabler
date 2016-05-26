@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using PublicTransportEnabler.Contract;
+using System.Threading.Tasks;
 using PublicTransportEnabler.DataModel;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
@@ -73,7 +73,7 @@ namespace PublicTransportEnabler.Provider
 		}
 
 
-		public override StopFinderRequest AutocompleteStations(string constraint)
+		public override Task<StopFinderRequest> AutocompleteStationsAsync(string constraint)
 		{
 			//return this.JsonStopfinderRequest(new Location(LocationType.ANY, 0, null, constraint));
 			return XmlStopfinderRequest(new Location(LocationType.ANY, 0, null, constraint));

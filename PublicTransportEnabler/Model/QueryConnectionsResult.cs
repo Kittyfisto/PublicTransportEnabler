@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PublicTransportEnabler.Contract;
 using PublicTransportEnabler.Enum;
 
 namespace PublicTransportEnabler.Model

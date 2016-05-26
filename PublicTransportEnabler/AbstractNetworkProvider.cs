@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PublicTransportEnabler.Contract;
+using System.Threading.Tasks;
 using PublicTransportEnabler.DataModel;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
@@ -23,16 +23,16 @@ namespace PublicTransportEnabler
 
 		public abstract NetworkId Id();
 		public abstract bool HasCapabilities(IEnumerable<Capability> capabilities);
-		public abstract OuterCoordInfoRequest QueryNearbyStations(Location location, int maxDistance, int maxStations);
-		public abstract DepartureMonitorRequest QueryDepartures(int stationId, int maxDepartures, bool equivs);
-		public abstract StopFinderRequest AutocompleteStations(string constraint);
+		public abstract Task<OuterCoordInfoRequest> QueryNearbyStationsAsync(Location location, int maxDistance, int maxStations);
+		public abstract Task<DepartureMonitorRequest> QueryDeparturesAsync(int stationId, int maxDepartures, bool equivs);
+		public abstract Task<StopFinderRequest> AutocompleteStationsAsync(string constraint);
 
 		public IEnumerable<Product> DefaultProducts()
 		{
 			return ALL_EXCEPT_HIGHSPEED.ToList();
 		}
 
-		public abstract TripRequest QueryConnections(Location from, Location via, Location to, DateTime date, bool dep,
+		public abstract Task<TripRequest> QueryConnectionsAsync(Location from, Location via, Location to, DateTime date, bool dep,
 		                                             int numConnections, List<Product> products, WalkSpeed walkSpeed,
 		                                             Accessibility accessibility,
 		                                             HashSet<Option> options);

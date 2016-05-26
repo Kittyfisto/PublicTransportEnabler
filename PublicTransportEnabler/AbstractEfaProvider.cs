@@ -5,8 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
-using PublicTransportEnabler.Contract;
 using PublicTransportEnabler.DataModel;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
@@ -164,7 +164,7 @@ namespace PublicTransportEnabler
 				uri.Append('&').Append(additionalQueryParameter);
 		}
 
-		protected StopFinderRequest JsonStopfinderRequest(Location constraint)
+		protected Task<StopFinderRequest> JsonStopfinderRequest(Location constraint)
 		{
 			var parameters = new StringBuilder();
 			AppendCommonRequestParams(parameters, "JSON");
@@ -267,7 +267,7 @@ namespace PublicTransportEnabler
 			return null;
 		}
 
-		protected StopFinderRequest XmlStopfinderRequest(Location constraint)
+		protected Task<StopFinderRequest> XmlStopfinderRequest(Location constraint)
 		{
 			var parameters = new StringBuilder();
 			AppendCommonRequestParams(parameters, "XML");
@@ -289,17 +289,18 @@ namespace PublicTransportEnabler
 			if (!httpPost)
 				uri.Append(parameters);
 
-			string resultString = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
-													   requestUrlEncoding, null, 3);
-
-			var serializer = new XmlSerializer(typeof(Request));
-
-			var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
-
-			return itdRequest.StopFinderRequest;
+			var task = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
+			                            requestUrlEncoding, null, 3);
+			return task.ContinueWith(t =>
+				{
+					var resultString = t.Result;
+					var serializer = new XmlSerializer(typeof (Request));
+					var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
+					return itdRequest.StopFinderRequest;
+				});
 		}
 
-		protected OuterCoordInfoRequest XmlCoordRequest(int lat, int lon, int maxDistance, int maxStations)
+		protected Task<OuterCoordInfoRequest> XmlCoordRequest(int lat, int lon, int maxDistance, int maxStations)
 		{
 			var parameters = new StringBuilder();
 			AppendCommonRequestParams(parameters, "XML");
@@ -316,16 +317,18 @@ namespace PublicTransportEnabler
 			if (!httpPost)
 				uri.Append(parameters);
 
-			string resultString = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
+			var task = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
 													   requestUrlEncoding, null, 3);
-
-			var serializer = new XmlSerializer(typeof(Request));
-
-			var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
-			return itdRequest.CoordInfoRequest;
+			return task.ContinueWith(t =>
+				{
+					string resultString = t.Result;
+					var serializer = new XmlSerializer(typeof (Request));
+					var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
+					return itdRequest.CoordInfoRequest;
+				});
 		}
 
-		public override OuterCoordInfoRequest QueryNearbyStations(Location location, int maxDistance, int maxStations)
+		public override Task<OuterCoordInfoRequest> QueryNearbyStationsAsync(Location location, int maxDistance, int maxStations)
 		{
 			if (location.HasLocation())
 				return XmlCoordRequest(location.Lat, location.Lon, maxDistance, maxStations);
@@ -339,7 +342,7 @@ namespace PublicTransportEnabler
 			return NearbyStationsRequest(location.Id, maxStations);
 		}
 
-		private OuterCoordInfoRequest NearbyStationsRequest(int stationId, int maxStations)
+		private Task<OuterCoordInfoRequest> NearbyStationsRequest(int stationId, int maxStations)
 		{
 			var parameters = new StringBuilder();
 			AppendCommonRequestParams(parameters, "XML");
@@ -356,23 +359,19 @@ namespace PublicTransportEnabler
 			if (!httpPost)
 				uri.Append(parameters);
 
-			string resultString = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
+			var task = WebClient.Scrape(uri.ToString(), httpPost ? parameters.ToString().Substring(1) : null,
 													   requestUrlEncoding, null, 3);
-
-
-			var serializer = new XmlSerializer(typeof(Request));
-
-			var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
-
-			if (itdRequest == null || itdRequest.DepartureMonitorRequest == null)
-				throw new Exception("Invalid XML");
-
-
-			return itdRequest.CoordInfoRequest;
+			return task.ContinueWith(t =>
+				{
+					string resultString = t.Result;
+					var serializer = new XmlSerializer(typeof (Request));
+					var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
+					return itdRequest.CoordInfoRequest;
+				});
 		}
 
 
-		public override StopFinderRequest AutocompleteStations(string constraint)
+		public override Task<StopFinderRequest> AutocompleteStationsAsync(string constraint)
 		{
 			return JsonStopfinderRequest(new Location(LocationType.ANY, 0, null, constraint));
 		}
@@ -1042,7 +1041,7 @@ namespace PublicTransportEnabler
 			                    + "' trainType='" + trainType + "' trainNum='" + trainNum + "' trainName='" + trainName + "'");
 		}
 
-		public override DepartureMonitorRequest QueryDepartures(int stationId, int maxDepartures, bool equivs)
+		public override Task<DepartureMonitorRequest> QueryDeparturesAsync(int stationId, int maxDepartures, bool equivs)
 		{
 			var parameters = new StringBuilder();
 			AppendCommonRequestParams(parameters, "XML");
@@ -1060,9 +1059,13 @@ namespace PublicTransportEnabler
 			if (!httpPost)
 				uri.Append(parameters);
 
-			string resultString = WebClient.Scrape(uri.ToString(), null, requestUrlEncoding, null, 3);
-			var itdRequest = Request.Deserialize(resultString);
-			return itdRequest.DepartureMonitorRequest;
+			var task = WebClient.Scrape(uri.ToString(), null, requestUrlEncoding, null, 3);
+			return task.ContinueWith(t =>
+				{
+					string resultString = t.Result;
+					var itdRequest = Request.Deserialize(resultString);
+					return itdRequest.DepartureMonitorRequest;
+				});
 		}
 
 		private StationDepartures FindStationDepartures(IEnumerable<StationDepartures> stationDepartures, int id)
@@ -1194,7 +1197,7 @@ namespace PublicTransportEnabler
 			uri.Append("&calcNumberOfTrips=4");
 		}
 
-		public override TripRequest QueryConnections(Location from, Location via, Location to, DateTime date, bool dep,
+		public override Task<TripRequest> QueryConnectionsAsync(Location from, Location via, Location to, DateTime date, bool dep,
 		                                             int numConnections, List<Product> products, WalkSpeed walkSpeed,
 		                                             Accessibility accessibility,
 		                                             HashSet<Option> options)
@@ -1206,11 +1209,14 @@ namespace PublicTransportEnabler
 			if (!httpPost)
 				uri.Append(parameters);
 
-			string resultString = WebClient.Scrape(uri.ToString(), httpPost ? parameters.Substring(1) : null,
+			var task = WebClient.Scrape(uri.ToString(), httpPost ? parameters.Substring(1) : null,
 			                                       requestUrlEncoding, null, 3);
-
-			var itdRequest = Request.Deserialize(resultString);
-			return itdRequest.TripRequest;
+			return task.ContinueWith(t =>
+				{
+					string resultString = t.Result;
+					var itdRequest = Request.Deserialize(resultString);
+					return itdRequest.TripRequest;
+				});
 		}
 
 		public override QueryConnectionsResult QueryMoreConnections(IQueryConnectionsContext contextObj, bool later,
