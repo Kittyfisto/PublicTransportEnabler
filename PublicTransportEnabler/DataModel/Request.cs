@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace PublicTransportEnabler.DataModel
@@ -63,5 +65,18 @@ namespace PublicTransportEnabler.DataModel
 
 		[XmlElement("itdTripRequest")]
 		public TripRequest TripRequest { get; set; }
+
+		/// <summary>
+		/// Deserializes the given content into a <see cref="Request"/>.
+		/// </summary>
+		/// <param name="xmlContent"></param>
+		/// <returns></returns>
+		[Pure]
+		public static Request Deserialize(string xmlContent)
+		{
+			var serializer = new XmlSerializer(typeof(Request));
+			var itdRequest = serializer.Deserialize(new StringReader(xmlContent)) as Request;
+			return itdRequest;
+		}
 	}
 }

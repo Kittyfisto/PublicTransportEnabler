@@ -7,7 +7,6 @@ namespace PublicTransportEnabler.DataModel
 	//<itdDateTime ttpFrom="20121201" ttpTo="20131231">
 
 	[XmlType("itdDateTime")]
-	[DebuggerDisplay("{Date.Year}/{Date.Month}/{Date.Day} - {Time.Hour}:{Time.Minute}")]
 	public class RequestDateTime
 	{
 		[XmlElement("itdDate")]
@@ -25,6 +24,13 @@ namespace PublicTransportEnabler.DataModel
 		public Range<DateTime?> Valid
 		{
 			get { return new Range<DateTime?>(ParseDateTime(From), ParseDateTime(To)); }
+		}
+
+		public override string ToString()
+		{
+			return string.Format("{0}/{1}/{2} - {3}:{4}",
+			                     Date.Day, Date.Month, Date.Year,
+			                     Time.Hour, Time.Minute);
 		}
 
 		private DateTime? ParseDateTime(string input)

@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itdRequest version="10.0.42.58" language="de" lengthUnit="METER" sessionID="0" client="Firefox" clientIP="195.30.121.23" serverID="WEB3_" virtDir="mobile" now="2016-05-26T11:52:50" nowWD="5">
+  <itdVersionInfo>
+    <ptKernel>
+      <appVersion>10.0.42.14 build 29.12.2015 10:03:37</appVersion>
+      <dataFormat>EFA10_00_08</dataFormat>
+      <dataBuild>2016-05-23T20:12:02</dataBuild>
+    </ptKernel>
+  </itdVersionInfo>
+  <itdDepartureMonitorRequest requestID="0">
+    <itdOdv type="any" usage="dm" anyObjFilter="2">
+      <itdOdvPlace state="identified" method="itp">
+        <odvPlaceElem omc="9162000" placeID="1" value="9162000:1" span="0" type="remote" mainPlace="1" stateless="placeID:9162000:1" x="11558978.32405" y="48140430.82778" mapName="WGS84">M�nchen</odvPlaceElem>
+        <odvPlaceInput></odvPlaceInput>
+      </itdOdvPlace>
+      <itdOdvName state="identified" method="itp" hasStaticInfo="1">
+        <odvNameElem x="11604072.60077" y="48128138.92513" mapName="WGS84" id="1000005" omc="9162000" placeID="1" anyType="stop" locality="M�nchen" objectName="Ostbahnhof" buildingName="" buildingNumber="" postCode="" streetName="" nameKey="" mainLocality="" stateless="1000005" gid="de:9162:5">
+          <itdMapItemList>
+            <itdMapItem text="" type="SM">
+              <itdImage src="mvv/ostbahnhof.pdf" size="539"/>
+            </itdMapItem>
+          </itdMapItemList>M�nchen, Ostbahnhof
+        </odvNameElem>
+        <infoLink>
+          <paramList>
+            <param edit="0">
+              <type>addInfoParam</type>
+              <name>infoType</name>
+              <value>stopInfo</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>infoID</name>
+              <value>9445_MVV</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>seqID</name>
+              <value>4</value>
+            </param>
+          </paramList>
+          <infoLinkText>MVV-Regionalbuslinie 213: Haltestellenverlegung Ostbahnhof (S) vom 09.05. bis 03.07.2016:</infoLinkText>
+          <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9445_MVV&amp;seqID=4</infoLinkURL>
+          <infoLinkImage/>
+          <infoText>
+            <content>Wegen Bauarbeiten kann die Haltestelle "Ostbahnhof (S)" im Busbahnhof von vsl. 09.05. bis 03.07.2016 nicht angefahren werden. Die Busse halten an einer Ersatzhaltestelle in der Haager Stra&amp;szlig;e (Ecke Friedenstra&amp;szlig;e) auf der S&amp;uuml;dostseite des Ostbahnhofes. Sie erreichen die Ersatzhaltestelle &amp;uuml;ber den Bahnhofsausgang "Friedenstra&amp;szlig;e". In Abh&amp;auml;ngigkeit des Baufortschritts kann es kurzfristig zu &amp;Auml;nderungen des Zeitraumes der Beeintr&amp;auml;chtigungen kommen.</content>
+            <subtitle>MVV-Regionalbuslinie 213: Haltestellenverlegung Ostbahnhof (S) vom 09.05. bis 03.07.2016:</subtitle>
+            <subject></subject>
+            <additionalText></additionalText>
+            <image></image>
+            <outputClientText>
+              <htmlText></htmlText>
+              <wmlText></wmlText>
+              <smsText></smsText>
+              <speechText></speechText>
+            </outputClientText>
+            <additionalLinks>
+              <additionalLink ID="1">
+                <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                <linkTarget>_blank</linkTarget>
+              </additionalLink>
+            </additionalLinks>
+          </infoText>
+        </infoLink>
+        <infoLink>
+          <paramList>
+            <param edit="0">
+              <type>addInfoParam</type>
+              <name>infoType</name>
+              <value>stopInfo</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>infoID</name>
+              <value>9648_MVV</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>seqID</name>
+              <value>3</value>
+            </param>
+          </paramList>
+          <infoLinkText>�nderung der Haltestellen am Ostbahnhof</infoLinkText>
+          <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9648_MVV&amp;seqID=3</infoLinkURL>
+          <infoLinkImage/>
+          <infoText>
+            <content>Von Montag, 09.05.16 bis vsl. Sonntag, 03.07.16 werden die Haltepositionen der Linien X30, 54, 55, 100, 145, 155, N43, N45, N74 sowie N75 innerhalb des Busbahnhofs wegen Bauarbeiten ge&amp;auml;ndert. Bitte beachten Sie hierzu die Aush&amp;auml;nge und Beschilderung!</content>
+            <subtitle>�nderung der Haltestellen am Ostbahnhof</subtitle>
+            <subject></subject>
+            <additionalText></additionalText>
+            <image></image>
+            <outputClientText>
+              <htmlText></htmlText>
+              <wmlText></wmlText>
+              <smsText></smsText>
+              <speechText></speechText>
+            </outputClientText>
+            <additionalLinks>
+              <additionalLink ID="1">
+                <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                <linkTarget>_blank</linkTarget>
+              </additionalLink>
+            </additionalLinks>
+          </infoText>
+        </infoLink>
+        <infoLink>
+          <paramList>
+            <param edit="0">
+              <type>addInfoParam</type>
+              <name>infoType</name>
+              <value>stopInfo</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>infoID</name>
+              <value>9745_MVV</value>
+            </param>
+            <param edit="0">
+              <type>system</type>
+              <name>seqID</name>
+              <value>2</value>
+            </param>
+          </paramList>
+          <infoLinkText>MetroBus 62 - Haltestellenverlegung am Ostbahnhof</infoLinkText>
+          <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9745_MVV&amp;seqID=2</infoLinkURL>
+          <infoLinkImage/>
+          <infoText>
+            <content>Ab Mo.,9.5.16 bis vsl. So.,3.7.16 wird die Haltestelle der Buslinie 62 aufgrund Bauarbeiten vom Busbahnhof in die W&amp;ouml;rthstra&amp;szlig;e verlegt (im Nordwesten des Orleansplatzes). Die Ankunft am Ostbahnhof verz&amp;ouml;gert sich damit jeweils um bis zu 3 Minuten. Dies ist bereits im Ersatzfahrplan ber&amp;uuml;cksichtigt. Bitte beachten Sie auch die geringf&amp;uuml;gig ge&amp;auml;nderten Abfahrtszeiten (+- 1min.) sowie die l&amp;auml;ngeren Wege zum Bahnhofsgeb&amp;auml;ude.</content>
+            <subtitle>MetroBus 62 - Haltestellenverlegung am Ostbahnhof</subtitle>
+            <subject></subject>
+            <additionalText></additionalText>
+            <image></image>
+            <outputClientText>
+              <htmlText></htmlText>
+              <wmlText></wmlText>
+              <smsText></smsText>
+              <speechText></speechText>
+            </outputClientText>
+            <additionalLinks>
+              <additionalLink ID="1">
+                <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                <linkTarget>_blank</linkTarget>
+              </additionalLink>
+            </additionalLinks>
+          </infoText>
+        </infoLink>
+        <odvNameInput>M�nchen, Ostbahnhof</odvNameInput>
+      </itdOdvName>
+      <itdOdvAssignedStops select="0">
+        <itdOdvAssignedStop stopID="1000005" x="11604072.60077" y="48128138.92513" mapName="WGS84" value="1000005:Ostbahnhof" place="M�nchen" nameWithPlace="Ostbahnhof" distanceTime="0" isTransferStop="0" hasStaticInfo="1" vm="100" gid="de:9162:5">Ostbahnhof</itdOdvAssignedStop>
+      </itdOdvAssignedStops>
+    </itdOdv>
+    <itdDateTime ttpFrom="20151113" ttpTo="20161210">
+      <itdDate weekday="5" year="2016" month="5" day="26"/>
+      <itdTime hour="11" minute="52"/>
+    </itdDateTime>
+    <itdDMDateTime deparr="dep"/>
+    <itdDateRange>
+      <itdDate day="26" month="05" year="2016" weekday="5"/>
+      <itdDate day="27" month="05" year="2016" weekday="6"/>
+      <itdDate day="28" month="05" year="2016" weekday="7"/>
+      <itdDate day="29" month="05" year="2016" weekday="1"/>
+      <itdDate day="30" month="05" year="2016" weekday="2"/>
+      <itdDate day="31" month="05" year="2016" weekday="3"/>
+      <itdDate day="01" month="06" year="2016" weekday="4"/>
+      <itdDate day="02" month="06" year="2016" weekday="5"/>
+      <itdDate day="03" month="06" year="2016" weekday="6"/>
+      <itdDate day="04" month="06" year="2016" weekday="7"/>
+      <itdDate day="05" month="06" year="2016" weekday="1"/>
+      <itdDate day="06" month="06" year="2016" weekday="2"/>
+      <itdDate day="07" month="06" year="2016" weekday="3"/>
+      <itdDate day="08" month="06" year="2016" weekday="4"/>
+      <itdDate day="09" month="06" year="2016" weekday="5"/>
+    </itdDateRange>
+    <itdTripOptions>
+      <itdPtOptions active="1" maxChanges="11" maxTime="360" maxWait="120" routeType="LEASTTIME" changeSpeed="normal" lineRestriction="400" useProxFootSearch="0" useProxFootSearchOrigin="0" useProxFootSearchDestination="0" bike="0" plane="0" noCrowded="0" noSolidStairs="0" noEscalators="0" noElevators="0" lowPlatformVhcl="0" wheelchair="0" needElevatedPlt="0" assistance="0" SOSAvail="0" noLonelyTransfer="0" illumTransfer="0" overgroundTransfer="0" noInsecurePlaces="0" privateTransport="0" activeImp="-1" activeCom="-1" activeSec="-1" twoSidedAlt="0" level="unknown" forcedStartDest="1">
+        <excludedMeans>
+          <meansElem value="0" selected="0">Zug</meansElem>
+          <meansElem value="1" selected="0">S-Bahn</meansElem>
+          <meansElem value="2" selected="0">U-Bahn</meansElem>
+          <meansElem value="3" selected="0">Stadtbahn</meansElem>
+          <meansElem value="4" selected="0">Stra�en-/Trambahn</meansElem>
+          <meansElem value="5" selected="0">Stadtbus</meansElem>
+          <meansElem value="6" selected="0">Regionalbus</meansElem>
+          <meansElem value="7" selected="0">Schnellbus</meansElem>
+          <meansElem value="8" selected="0">Seil-/Zahnradbahn</meansElem>
+          <meansElem value="9" selected="0">Schiff</meansElem>
+          <meansElem value="10" selected="0">AST/Rufbus</meansElem>
+          <meansElem value="11" selected="0">Sonstige</meansElem>
+          <meansElem value="12" selected="0">Flugzeug</meansElem>
+          <meansElem value="13" selected="0">Zug (Nahverkehr)</meansElem>
+          <meansElem value="14" selected="0">Zug (Fernverkehr)</meansElem>
+          <meansElem value="15" selected="0">Zug (Fernverkehr mit</meansElem>
+          <meansElem value="16" selected="0">Zug (Fernverkehr mit</meansElem>
+          <meansElem value="17" selected="0">Schienenersatzverkeh</meansElem>
+          <meansElem value="18" selected="0">Zug Shuttle</meansElem>
+          <meansElem value="19" selected="0">B�rgerbus</meansElem>
+        </excludedMeans>
+      </itdPtOptions>
+      <itdItOptions>
+        <itRouter logASCII="false" logSVG="false"/>
+        <itPedestrian computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="60" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="connection" prefIllum="0" prefToilet="0" prefBench="0" useHdcAcc="0" useGeoRefs="0"/>
+        <itBicycle preferAsphaltTracks="false" preferGreenTracks="false" usePseudoRouting="true" useSignedRoute="false" cycleSpeed="20" prefHikePath="false" elevFac="50" useNetClasses="false" useDrawClasses="false" useEnv="false" inclEnvLeisureRoutes="false" inclEnvTrafficDensity="true" useSurfQuality="false" inclSurfQualGravel="false" inclSurfQualForrest="false" inclSurfQualSingleTrial="false" inclSurfQualCarry="false" useLayoutStructural="false" useLayoutDirections="false" prefPedestrianSeperated="false" useRecommRoute="false" computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="60" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown"/>
+        <mitCar computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="10" traveltimeFactor="90" noTunnel="false" noBridge="false" noFerry="false" maxTime="60" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown" mitProfileData="false" mitIncidentData="false" mitOnlineData="false" noHighway="false" noTollRoad="false" prefSerSt="false"/>
+        <mitTaxi computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="10" traveltimeFactor="90" noTunnel="false" noBridge="false" noFerry="false" maxTime="60" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown" mitProfileData="false" mitIncidentData="false" mitOnlineData="false" noHighway="false" noTollRoad="false" prefSerSt="false"/>
+        <departureTransport>
+          <individualTransport meansCode="100" value="10" speed="normal" selected="1"/>
+          <individualTransport meansCode="101" value="30" speed="normal" selected="0"/>
+          <individualTransport meansCode="102" value="30" speed="normal" selected="0"/>
+          <individualTransport meansCode="103" value="20" speed="normal" selected="0"/>
+          <individualTransport meansCode="104" value="20" speed="normal" selected="0"/>
+          <individualTransport meansCode="105" value="20" speed="normal" selected="0"/>
+          <individualTransport meansCode="106" value="60" speed="normal" selected="0"/>
+          <individualTransport meansCode="107" value="30" speed="normal" selected="0"/>
+        </departureTransport>
+      </itdItOptions>
+      <itdUsedOptions calcNumberOfTrips="3" dwellTime="00:00" nextDepsPerLeg="0" calcCO2="0" realtime="1" realOnlyInfo="0" itemType="STOPLINK"/>
+    </itdTripOptions>
+    <itdServingLines trainInfo="show" selected="1">
+      <itdServingLine selected="1" code="2" number="S1" symbol="S1" motType="1" realtime="0" direction="Flughafen M�nchen" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1002660" stateless="mvv:01001: :R:s16" trainName="" oK="5" index="1:0">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01001" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Marienplatz - Hauptbahnhof - Laim - Neufahrn - Freising</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S2" symbol="S2" motType="1" realtime="0" direction="Erding" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1003290" stateless="mvv:01002: :H:s16" trainName="" oK="5" index="1:1">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01002" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Petershausen - Dachau Bf - Laim - Hauptbahnhof - Marienplatz - Ostbahnhof - Riem - Markt Schwaben - Erding</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S2" symbol="S2" motType="1" realtime="0" direction="Altom�nster" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1006800" stateless="mvv:01002: :R:s16" trainName="" oK="5" index="1:2">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01002" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Erding - Markt Schwaben - Riem - Ostbahnhof - Marienplatz - Hauptbahnhof - Laim - Dachau Bf - Petershausen</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S3" symbol="S3" motType="1" realtime="0" direction="Deisenhofen" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1002340" stateless="mvv:01003: :H:s16" trainName="" oK="5" index="1:3">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01003" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Mammendorf - Pasing - Hauptbahnhof - Marienplatz - Ostbahnhof - Giesing - Holzkirchen</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S3" symbol="S3" motType="1" realtime="0" direction="Maisach" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1006140" stateless="mvv:01003: :R:s16" trainName="" oK="5" index="1:4">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01003" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Holzkirchen - Giesing - Ostbahnhof - Marienplatz - Hauptbahnhof - Pasing - Mammendorf</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S4" symbol="S4" motType="1" realtime="0" direction="Ebersberg" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1004070" stateless="mvv:01004: :H:s16" trainName="" oK="5" index="1:5">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01004" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Geltendorf - F�rstenfeldbruck - Pasing - Hauptbahnhof - Marienplatz - Ostbahnhof - Zorneding - Ebersberg</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S4" symbol="S4" motType="1" realtime="0" direction="Geltendorf" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1005950" stateless="mvv:01004: :R:s16" trainName="" oK="5" index="1:6">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01004" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ebersberg - Zorneding - Ostbahnhof - Marienplatz - Hauptbahnhof - Pasing - F�rstenfeldbruck - Geltendorf</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S6" symbol="S6" motType="1" realtime="0" direction="Ebersberg" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="" stateless="mvv:01006: :H:s16" trainName="" oK="5" index="1:7">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01006" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Tutzing - Starnberg - Pasing - Hauptbahnhof - Marienplatz - Ostbahnhof - Zorneding - Ebersberg</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S6" symbol="S6" motType="1" realtime="0" direction="Tutzing" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1005480" stateless="mvv:01006: :R:s16" trainName="" oK="5" index="1:8">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01006" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ebersberg - Zorneding - Ostbahnhof - Marienplatz - Hauptbahnhof - Pasing - Starnberg - Tutzing</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S7" symbol="S7" motType="1" realtime="0" direction="Aying" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1002260" stateless="mvv:01007: :H:s16" trainName="" oK="5" index="1:9">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01007" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Wolfratshausen - Harras - Donnersbergerbr�cke - Hbf - Marienpl. - Ostbf - Giesing - Neuperlach S�d - Kreuzstra�e</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S7" symbol="S7" motType="1" realtime="0" direction="Wolfratshausen" valid="Fahrplan (2016)" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="1004760" stateless="mvv:01007: :R:s16" trainName="" oK="5" index="1:10">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01007" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Kreuzstra�e - Neuperlach S�d - Giesing - Ostbf - Marienpl. - Hbf - Donnersbergerbr�cke - Harras - Wolfratshausen</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S8" symbol="S8" motType="1" realtime="0" direction="Flughafen M�nchen" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1003240" stateless="mvv:01008: :H:s16" trainName="" oK="5" index="1:11">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01008" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Herrsching - We�ling - Pasing - Marienplatz - Ostbahnhof  - Ismaning - Flughafen M�nchen</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="2" number="S8" symbol="S8" motType="1" realtime="0" direction="Herrsching" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1005410" stateless="mvv:01008: :R:s16" trainName="" oK="5" index="1:12">
+        <itdNoTrain name="S-Bahn"/>
+        <motDivaParams line="01008" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Flughafen M�nchen  - Ismaning - Ostbahnhof  - Marienplatz - Pasing - We�ling - Herrsching</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="1" number="U5" symbol="U5" motType="2" realtime="0" direction="Neuperlach S�d" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001010" stateless="mvv:21005: :H:s16" trainName="" oK="5" index="2:0">
+        <itdNoTrain name="U-Bahn"/>
+        <motDivaParams line="21005" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Laimer Platz - Hauptbahnhof - Ostbahnhof - Neuperlach S�d</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="1" number="U5" symbol="U5" motType="2" realtime="0" direction="Laimer Platz" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000280" stateless="mvv:21005: :R:s16" trainName="" oK="5" index="2:1">
+        <itdNoTrain name="U-Bahn"/>
+        <motDivaParams line="21005" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Neuperlach S�d - Ostbahnhof - Hauptbahnhof - Laimer Platz</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="4" number="19" symbol="19" motType="4" realtime="0" direction="St.-Veit-Stra�e" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000906" stateless="mvv:22019: :H:s16" trainName="" oK="5" index="4:0">
+        <itdNoTrain name="Tram"/>
+        <motDivaParams line="22019" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Pasing Bf - Hauptbahnhof - Maxmonument - Max-Weber-Pl. - Ostbf - St.-Veit-Stra�e</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="4" number="19" symbol="19" motType="4" realtime="0" direction="Pasing" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000010" stateless="mvv:22019: :R:s16" trainName="" oK="5" index="4:1">
+        <itdNoTrain name="Tram"/>
+        <motDivaParams line="22019" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>St.-Veit-Stra�e - Ostbf - Max-Weber-Pl. - Maxmonument - Hauptbahnhof - Pasing Bf</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="4" number="N19" symbol="N19" motType="4" realtime="0" direction="St.-Veit-Stra�e" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000906" stateless="mvv:22N19: :H:s16" trainName="" oK="5" index="4:2">
+        <itdNoTrain name="NachtTram"/>
+        <motDivaParams line="22N19" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Pasing Bf - Hauptbahnhof - Maxmonument - Max-Weber-Pl. - Ostbf - St.-Veit-Stra�e</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="4" number="N19" symbol="N19" motType="4" realtime="0" direction="Pasing" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000010" stateless="mvv:22N19: :R:s16" trainName="" oK="5" index="4:3">
+        <itdNoTrain name="NachtTram"/>
+        <motDivaParams line="22N19" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>St.-Veit-Stra�e - Ostbf - Max-Weber-Pl. - Maxmonument - Hauptbahnhof - Pasing Bf</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="54" symbol="54" motType="5" realtime="0" direction="Lorettoplatz" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001404" stateless="mvv:23054: :H:s16" trainName="" oK="5" index="5:0">
+        <itdNoTrain name="MetroBus"/>
+        <motDivaParams line="23054" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>M�nchner Freiheit - Ostbahnhof - Lorettoplatz</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="54" symbol="54" motType="5" realtime="0" direction="M�nchner Freiheit" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000500" stateless="mvv:23054: :R:s16" trainName="" oK="5" index="5:1">
+        <itdNoTrain name="MetroBus"/>
+        <motDivaParams line="23054" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Lorettoplatz - Ostbahnhof - M�nchner Freiheit</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="55" symbol="55" motType="5" realtime="0" direction="Waldperlach" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000967" stateless="mvv:23055: :H:s16" trainName="" oK="5" index="5:2">
+        <itdNoTrain name="MetroBus"/>
+        <motDivaParams line="23055" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Waldperlach/Putzbrunn, M.-Haslbeck-Stra�e</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="62" symbol="62" motType="5" realtime="0" direction="Rotkreuzplatz" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000190" stateless="mvv:23062: :R:s16" trainName="" oK="5" index="5:3">
+        <itdNoTrain name="MetroBus"/>
+        <motDivaParams line="23062" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Sendlinger Tor - Poccistra�e Heimeranplatz - Rotkreuzplatz</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="100" symbol="100" motType="5" realtime="0" direction="Hauptbahnhof Nord" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1007000" stateless="mvv:23100: :R:s16" trainName="" oK="5" index="5:4">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23100" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Odeonsplatz - Hauptbahnhof Nord (Museenlinie)</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="145" symbol="145" motType="5" realtime="0" direction="Fasangarten" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001120" stateless="mvv:23145: :H:s16" trainName="" oK="5" index="5:5">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23145" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Balanstra�e - Fasangarten</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="148" symbol="148" motType="5" realtime="0" direction="Silberhornstra�e" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001170" stateless="mvv:23148: :H:s16" trainName="" oK="5" index="5:6">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23148" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Max-Weber-Pl. - Ostbahnhof - Silberhornstr.</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="148" symbol="148" motType="5" realtime="0" direction="Max-Weber-Platz" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000580" stateless="mvv:23148: :R:s16" trainName="" oK="5" index="5:7">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23148" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Silberhornstr. - Ostbahnhof - Max-Weber-Pl.</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="155" symbol="155" motType="5" realtime="0" direction="Emdenstra�e" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001038" stateless="mvv:23155: :H:s16" trainName="" oK="5" index="5:8">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23155" project="s16" direction="H" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Karl-Preis-Platz - Emdenstra�e</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="187" symbol="187" motType="5" realtime="0" direction="Arabellapark" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000670" stateless="mvv:23187: :R:s16" trainName="" oK="5" index="5:9">
+        <itdNoTrain name="StadtBus"/>
+        <motDivaParams line="23187" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof  - Richard-Strauss-Stra�e - Arabellapark</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="N43" symbol="N43" motType="5" realtime="0" direction="Ostbahnhof" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000005" stateless="mvv:23043:N:H:s16" trainName="" oK="5" index="5:10">
+        <itdNoTrain name="NachtBus"/>
+        <motDivaParams line="23043" project="s16" direction="H" supplement="N" network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Giesing - Am Harras - Hirschgarten - M�nchner Freiheit - Ostbahnhof    (Ringlinie)</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="N44" symbol="N44" motType="5" realtime="0" direction="Ostbahnhof" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000005" stateless="mvv:23044:N:H:s16" trainName="" oK="5" index="5:11">
+        <itdNoTrain name="NachtBus"/>
+        <motDivaParams line="23044" project="s16" direction="H" supplement="N" network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - M�nchner Freiheit - Hirschgarten - Am Harras - Giesing - Ostbahnhof    (Ringlinie)</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="N45" symbol="N45" motType="5" realtime="0" direction="Waldperlach" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000967" stateless="mvv:23045:N:H:s16" trainName="" oK="5" index="5:12">
+        <itdNoTrain name="NachtBus"/>
+        <motDivaParams line="23045" project="s16" direction="H" supplement="N" network="mvv"/>
+        <itdRouteDescText>M�nchner Freiheit - Karlsplatz(Stachus) - Goetheplatz - Ostfriedhof - Ostbahnhof - Waldperlach</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="N45" symbol="N45" motType="5" realtime="0" direction="M�nchner Freiheit" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1000500" stateless="mvv:23045:N:R:s16" trainName="" oK="5" index="5:13">
+        <itdNoTrain name="NachtBus"/>
+        <motDivaParams line="23045" project="s16" direction="R" supplement="N" network="mvv"/>
+        <itdRouteDescText>Waldperlach - Ostbahnhof - Ostfriedhof - Goetheplatz - Karlsplatz(Stachus) - M�nchner Freiheit</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="N74" symbol="N74" motType="5" realtime="0" direction="Messestadt Ost" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="1001260" stateless="mvv:23074:N:H:s16" trainName="" oK="5" index="5:14">
+        <itdNoTrain name="NachtBus"/>
+        <motDivaParams line="23074" project="s16" direction="H" supplement="N" network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Vogelweideplatz - Messestadt Ost</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="X30" symbol="X30" motType="5" realtime="0" direction="Harras" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="" stateless="mvv:20030:X:R:s16" trainName="" oK="5" index="5:15">
+        <itdNoTrain name="ExpressBus"/>
+        <motDivaParams line="20030" project="s16" direction="R" supplement="X" network="mvv"/>
+        <itdRouteDescText>Ostbahnhof - Silberhornstra�e - Candidplatz - Bruderm�hlstr. - Harras</itdRouteDescText>
+        <itdOperator>
+          <code>23</code>
+          <name>SWM/MVG, 0800/344226600</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="3" number="9410" symbol="9410" motType="6" realtime="0" direction="Haag (Obb.), Br�uhausplatz" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="mvv:12410: :R:s16" trainName="" oK="5" index="6:0">
+        <itdNoTrain name="Regionalbus"/>
+        <motDivaParams line="12410" project="s16" direction="R" supplement=" " network="mvv"/>
+        <itdRouteDescText>Ostbahnhof    - Forstinning - Hohenlinden - Birkach (- Haag - Gars)</itdRouteDescText>
+        <itdOperator>
+          <code>1011</code>
+          <name>Regionalverkehr Obb.</name>
+        </itdOperator>
+      </itdServingLine>
+      <itdServingLine selected="1" code="12" number="S4" symbol="S4" motType="6" realtime="0" direction="Geltendorf" valid="Fahrplan (2016)" compound="0" TTB="1" STT="1" ROP="0" type="unknown" spTr="" destID="" stateless="mvv:01004:E:R:s16" trainName="" oK="5" index="8:0">
+        <itdNoTrain name="SEV"/>
+        <motDivaParams line="01004" project="s16" direction="R" supplement="E" network="mvv"/>
+        <itdRouteDescText>Ebersberg - Zorneding - Ostbahnhof - Marienplatz - Geltendorf</itdRouteDescText>
+        <itdOperator>
+          <code>01</code>
+          <name>DB Regio AG / S-Bahn M�nchen</name>
+        </itdOperator>
+      </itdServingLine>
+    </itdServingLines>
+    <itdDepartureList>
+      <itdDeparture stopID="1000005" x="11603548.63483" y="48128146.11497" mapName="WGS84" area="51" platform="52" gid="de:9162:5" pointGid="de:9162:5:51:52" platformName="U-Bahn Gleis 2" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="1">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="52" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="92" code="1" number="U5" symbol="U5" motType="2" realtime="0" direction="Neuperlach S�d" validDirection="1" directionFrom="Laimer Platz" destID="1001010" stateless="mvv:21005: :H:s16">
+          <itdNoTrain name="U-Bahn"/>
+          <motDivaParams line="21005" project="s16" direction="H" supplement=" " network="mvv"/>
+          <itdRouteDescText>Laimer Platz - Hauptbahnhof - Ostbahnhof - Neuperlach S�d</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdLineInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>lineInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9739_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>4</value>
+                </param>
+              </paramList>
+              <infoLinkText>U5 Schienenersatzverkehr Innsbrucker Ring - Neuperlach S�d</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9739_MVV&amp;seqID=4</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Wegen Schienenschleifarbeiten wird die U-Bahnlinie U5 von Sonntag, 22. Mai mit Donnerstag, 26. Mai 2016, jeweils von ca. 22.30 Uhr bis Betriebsschluss, zwischen Neuperlach S&amp;uuml;d und Innsbrucker Ring durch Busse ersetzt. Letzte durchfahrende Z&amp;uuml;ge: Ab Neuperlach S&amp;uuml;d 22.28 Uhr, ab Laimer Platz 22.06 Uhr (Hauptbahnhof 22.14 Uhr).</content>
+                <subtitle>U5 Schienenersatzverkehr Innsbrucker Ring - Neuperlach S�d</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText>#Reset;#Drawline:mvv:21005:_$s16:3;#Drawline:mvv:23105:_$s16:2;</wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1537/files/194/U5-Sonderfahrplan-1463126412000.pdf</linkURL>
+                    <linkText>Den zugeh�rigen Fahrplan finden Sie hier</linkText>
+                    <linkTextShort>Den zugeh�rigen Fahrplan finden Sie hier</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdLineInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11605785.29029" y="48127272.44293" mapName="WGS84" area="25" platform="Gl.8" gid="de:9162:5" pointGid="de:9162:5:47:88" platformName="8" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="1">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="52" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="13531" code="6" number="M 79067 Meridian" symbol="M 79067 Meridian" motType="0" realtime="0" direction="Kufstein" validDirection="1" directionFrom="M�nchen Hbf (Gl. 5-36)" trainType="M" trainName="Meridian" trainNum="79067" destID="80009690" stateless="ddb:90950: :H:j16">
+          <itdNoTrain name="Meridian">Fahrradmitnahme begrenzt m�glich</itdNoTrain>
+          <motDivaParams line="90950" project="j16" direction="H" supplement=" " network="ddb"/>
+          <itdRouteDescText>M�nchen - Rosenheim - Kufstein</itdRouteDescText>
+          <itdOperator>
+            <code>M8</code>
+            <name>Meridian</name>
+          </itdOperator>
+        </itdServingLine>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11603858.01403" y="48128093.21972" mapName="WGS84" area="3" platform="3" gid="de:9162:5" pointGid="de:9162:5:3:3" platformName="" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="1">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="52" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="56" code="3" number="145" symbol="145" motType="5" realtime="0" direction="Fasangarten" validDirection="1" directionFrom="Ostbahnhof" destID="1001120" stateless="mvv:23145: :H:s16">
+          <itdNoTrain name="StadtBus"/>
+          <motDivaParams line="23145" project="s16" direction="H" supplement=" " network="mvv"/>
+          <itdRouteDescText>Ostbahnhof - Balanstra�e - Fasangarten</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdStopInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>stopInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9648_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>3</value>
+                </param>
+              </paramList>
+              <infoLinkText>�nderung der Haltestellen am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9648_MVV&amp;seqID=3</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Von Montag, 09.05.16 bis vsl. Sonntag, 03.07.16 werden die Haltepositionen der Linien X30, 54, 55, 100, 145, 155, N43, N45, N74 sowie N75 innerhalb des Busbahnhofs wegen Bauarbeiten ge&amp;auml;ndert. Bitte beachten Sie hierzu die Aush&amp;auml;nge und Beschilderung!</content>
+                <subtitle>�nderung der Haltestellen am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                    <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                    <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdStopInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11604680.47408" y="48127700.33740" mapName="WGS84" area="21" platform="Gl.1" gid="de:9162:5" pointGid="de:9162:5:41:81" platformName="S-Bahn Gleis 1" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="1">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="53" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="71" code="2" number="S4" symbol="S4" motType="1" realtime="0" direction="Geltendorf" validDirection="1" directionFrom="Grafing Bahnhof" destID="1005950" stateless="mvv:01004: :R:s16">
+          <itdNoTrain name="S-Bahn"/>
+          <motDivaParams line="01004" project="s16" direction="R" supplement=" " network="mvv"/>
+          <itdRouteDescText>Ebersberg - Zorneding - Ostbahnhof - Marienplatz - Hauptbahnhof - Pasing - F�rstenfeldbruck - Geltendorf</itdRouteDescText>
+          <itdOperator>
+            <code>01</code>
+            <name>DB Regio AG / S-Bahn M�nchen</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdLineInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>lineInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9747_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>2</value>
+                </param>
+              </paramList>
+              <infoLinkText>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9747_MVV&amp;seqID=2</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Durch Bauarbeiten am Ostbahnhof kommt es zu Fahrplan&amp;auml;nderungen mit Umleitungen und Haltausf&amp;auml;llen vom 20. bis 23. Mai 2016 sowie vom 27. bis 30. Mai 2016.</content>
+                <subtitle>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>http://www.s-bahn-muenchen.de/s_muenchen/view/fahrplan/baustellen.shtml</linkURL>
+                    <linkText>Baustelleninformation der S-Bahn M�nchen</linkText>
+                    <linkTextShort>Baustelleninformation der S-Bahn M�nchen</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdLineInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11605219.79549" y="48127441.37955" mapName="WGS84" area="22" platform="Gl.4" gid="de:9162:5" pointGid="de:9162:5:43:84" platformName="S-Bahn Gleis 4" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="2">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="54" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="80" code="2" number="S3" symbol="S3" motType="1" realtime="0" direction="Holzkirchen" validDirection="1" directionFrom="Mammendorf" destID="1004370" stateless="mvv:01003: :H:s16">
+          <itdNoTrain name="S-Bahn"/>
+          <motDivaParams line="01003" project="s16" direction="H" supplement=" " network="mvv"/>
+          <itdRouteDescText>Mammendorf - Pasing - Hauptbahnhof - Marienplatz - Ostbahnhof - Giesing - Holzkirchen</itdRouteDescText>
+          <itdOperator>
+            <code>01</code>
+            <name>DB Regio AG / S-Bahn M�nchen</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdLineInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>lineInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9747_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>2</value>
+                </param>
+              </paramList>
+              <infoLinkText>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9747_MVV&amp;seqID=2</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Durch Bauarbeiten am Ostbahnhof kommt es zu Fahrplan&amp;auml;nderungen mit Umleitungen und Haltausf&amp;auml;llen vom 20. bis 23. Mai 2016 sowie vom 27. bis 30. Mai 2016.</content>
+                <subtitle>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>http://www.s-bahn-muenchen.de/s_muenchen/view/fahrplan/baustellen.shtml</linkURL>
+                    <linkText>Baustelleninformation der S-Bahn M�nchen</linkText>
+                    <linkTextShort>Baustelleninformation der S-Bahn M�nchen</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdLineInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11604883.00437" y="48127566.13166" mapName="WGS84" area="21" platform="Gl.2" gid="de:9162:5" pointGid="de:9162:5:41:82" platformName="S-Bahn Gleis 2" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="3">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="55" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="162" code="2" number="S1" symbol="S1" motType="1" realtime="0" direction="Freising / Flughafen" validDirection="1" directionFrom="Ostbahnhof" destID="-1" stateless="mvv:01001: :R:s16">
+          <itdNoTrain name="S-Bahn">Fahrg�ste zum Flughafen bitte in den hinteren Zugteil einsteigen!</itdNoTrain>
+          <motDivaParams line="01001" project="s16" direction="R" supplement=" " network="mvv"/>
+          <itdRouteDescText>Ostbahnhof - Marienplatz - Hauptbahnhof - Laim - Neufahrn - Freising</itdRouteDescText>
+          <itdOperator>
+            <code>01</code>
+            <name>DB Regio AG / S-Bahn M�nchen</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdLineInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>lineInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9747_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>2</value>
+                </param>
+              </paramList>
+              <infoLinkText>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9747_MVV&amp;seqID=2</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Durch Bauarbeiten am Ostbahnhof kommt es zu Fahrplan&amp;auml;nderungen mit Umleitungen und Haltausf&amp;auml;llen vom 20. bis 23. Mai 2016 sowie vom 27. bis 30. Mai 2016.</content>
+                <subtitle>S - Fahrplan�nderungen mit Umleitungen und Haltausf�llen wegen Bauarbeiten am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>http://www.s-bahn-muenchen.de/s_muenchen/view/fahrplan/baustellen.shtml</linkURL>
+                    <linkText>Baustelleninformation der S-Bahn M�nchen</linkText>
+                    <linkTextShort>Baustelleninformation der S-Bahn M�nchen</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdLineInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11604006.60809" y="48127985.81012" mapName="WGS84" area="3" platform="2" gid="de:9162:5" pointGid="de:9162:5:3:2" platformName="" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="3">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="55" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="190" code="3" number="55" symbol="55" motType="5" realtime="0" direction="Putzbrunn, M.-Haslbeck-Stra�e" validDirection="1" directionFrom="Ostbahnhof" destID="1002172" stateless="mvv:23055: :H:s16">
+          <itdNoTrain name="MetroBus"/>
+          <motDivaParams line="23055" project="s16" direction="H" supplement=" " network="mvv"/>
+          <itdRouteDescText>Ostbahnhof - Waldperlach/Putzbrunn, M.-Haslbeck-Stra�e</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdStopInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>stopInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9648_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>3</value>
+                </param>
+              </paramList>
+              <infoLinkText>�nderung der Haltestellen am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9648_MVV&amp;seqID=3</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Von Montag, 09.05.16 bis vsl. Sonntag, 03.07.16 werden die Haltepositionen der Linien X30, 54, 55, 100, 145, 155, N43, N45, N74 sowie N75 innerhalb des Busbahnhofs wegen Bauarbeiten ge&amp;auml;ndert. Bitte beachten Sie hierzu die Aush&amp;auml;nge und Beschilderung!</content>
+                <subtitle>�nderung der Haltestellen am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                    <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                    <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdStopInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11602279.11417" y="48129023.08937" mapName="WGS84" area="61" platform="EBoSO" gid="de:9162:5" pointGid="" platformName="" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="3">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="55" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="881" code="3" number="62" symbol="62" motType="5" realtime="0" direction="Rotkreuzplatz" validDirection="1" directionFrom="Ostbahnhof" destID="1000190" stateless="mvv:23062: :R:s16">
+          <itdNoTrain name="MetroBus"/>
+          <motDivaParams line="23062" project="s16" direction="R" supplement=" " network="mvv"/>
+          <itdRouteDescText>Ostbahnhof - Sendlinger Tor - Poccistra�e Heimeranplatz - Rotkreuzplatz</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdStopInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>stopInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9745_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>2</value>
+                </param>
+              </paramList>
+              <infoLinkText>MetroBus 62 - Haltestellenverlegung am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9745_MVV&amp;seqID=2</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Ab Mo.,9.5.16 bis vsl. So.,3.7.16 wird die Haltestelle der Buslinie 62 aufgrund Bauarbeiten vom Busbahnhof in die W&amp;ouml;rthstra&amp;szlig;e verlegt (im Nordwesten des Orleansplatzes). Die Ankunft am Ostbahnhof verz&amp;ouml;gert sich damit jeweils um bis zu 3 Minuten. Dies ist bereits im Ersatzfahrplan ber&amp;uuml;cksichtigt. Bitte beachten Sie auch die geringf&amp;uuml;gig ge&amp;auml;nderten Abfahrtszeiten (+- 1min.) sowie die l&amp;auml;ngeren Wege zum Bahnhofsgeb&amp;auml;ude.</content>
+                <subtitle>MetroBus 62 - Haltestellenverlegung am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                    <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                    <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdStopInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11604807.15825" y="48128699.04099" mapName="WGS84" area="13" platform="13" gid="de:9162:5" pointGid="de:9162:5:33:13" platformName="" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="3">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="55" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="338" code="3" number="148" symbol="148" motType="5" realtime="0" direction="Max-Weber-Platz" validDirection="1" directionFrom="Silberhornstra�e" destID="1000580" stateless="mvv:23148: :R:s16">
+          <itdNoTrain name="StadtBus"/>
+          <motDivaParams line="23148" project="s16" direction="R" supplement=" " network="mvv"/>
+          <itdRouteDescText>Silberhornstr. - Ostbahnhof - Max-Weber-Pl.</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+      </itdDeparture>
+      <itdDeparture stopID="1000005" x="11604006.60809" y="48127985.81012" mapName="WGS84" area="3" platform="2" gid="de:9162:5" pointGid="de:9162:5:3:2" platformName="" stopName="Ostbahnhof" nameWO="Ostbahnhof" countdown="4">
+        <itdDateTime>
+          <itdDate year="2016" month="5" day="26" weekday="5"/>
+          <itdTime hour="11" minute="56" ap=""/>
+        </itdDateTime>
+        <itdServingLine key="60" code="3" number="54" symbol="54" motType="5" realtime="0" direction="Lorettoplatz" validDirection="1" directionFrom="M�nchner Freiheit" destID="1001404" stateless="mvv:23054: :H:s16">
+          <itdNoTrain name="MetroBus"/>
+          <motDivaParams line="23054" project="s16" direction="H" supplement=" " network="mvv"/>
+          <itdRouteDescText>M�nchner Freiheit - Ostbahnhof - Lorettoplatz</itdRouteDescText>
+          <itdOperator>
+            <code>23</code>
+            <name>SWM/MVG, 0800/344226600</name>
+          </itdOperator>
+        </itdServingLine>
+        <itdInfoLinkList>
+          <itdStopInfoList>
+            <infoLink>
+              <paramList>
+                <param edit="0">
+                  <type>addInfoParam</type>
+                  <name>infoType</name>
+                  <value>stopInfo</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>infoID</name>
+                  <value>9648_MVV</value>
+                </param>
+                <param edit="0">
+                  <type>system</type>
+                  <name>seqID</name>
+                  <value>3</value>
+                </param>
+              </paramList>
+              <infoLinkText>�nderung der Haltestellen am Ostbahnhof</infoLinkText>
+              <infoLinkURL>http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9648_MVV&amp;seqID=3</infoLinkURL>
+              <infoLinkImage/>
+              <infoText>
+                <content>Von Montag, 09.05.16 bis vsl. Sonntag, 03.07.16 werden die Haltepositionen der Linien X30, 54, 55, 100, 145, 155, N43, N45, N74 sowie N75 innerhalb des Busbahnhofs wegen Bauarbeiten ge&amp;auml;ndert. Bitte beachten Sie hierzu die Aush&amp;auml;nge und Beschilderung!</content>
+                <subtitle>�nderung der Haltestellen am Ostbahnhof</subtitle>
+                <subject></subject>
+                <additionalText></additionalText>
+                <image></image>
+                <outputClientText>
+                  <htmlText></htmlText>
+                  <wmlText></wmlText>
+                  <smsText></smsText>
+                  <speechText></speechText>
+                </outputClientText>
+                <additionalLinks>
+                  <additionalLink ID="1">
+                    <linkURL>https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/1463/files/180/Haltestellenanordnung-Ostbf-09-05-vsl-03-07-1461841184000.pdf</linkURL>
+                    <linkText>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkText>
+                    <linkTextShort>Haltestellenanordnung Ostbahnhof 9.5. bis vsl. 3.7.</linkTextShort>
+                    <linkTarget>_blank</linkTarget>
+                  </additionalLink>
+                </additionalLinks>
+              </infoText>
+            </infoLink>
+          </itdStopInfoList>
+        </itdInfoLinkList>
+      </itdDeparture>
+    </itdDepartureList>
+  </itdDepartureMonitorRequest>
+</itdRequest>

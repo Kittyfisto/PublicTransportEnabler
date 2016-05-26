@@ -44,6 +44,10 @@ namespace PublicTransportEnabler.Test.Provider
 			var provider = new MvvProvider(_client);
 			var departures = provider.QueryDepartures(1000005, 10, true);
 			departures.Should().NotBeNull();
+			var list = departures.DepartureList;
+			list.Should().NotBeNull();
+			list.Length.Should().Be(10, "Because we requested 10 departures");
+			
 		}
 	}
 }

@@ -1061,10 +1061,7 @@ namespace PublicTransportEnabler
 				uri.Append(parameters);
 
 			string resultString = WebClient.Scrape(uri.ToString(), null, requestUrlEncoding, null, 3);
-
-			var serializer = new XmlSerializer(typeof(Request));
-
-			var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
+			var itdRequest = Request.Deserialize(resultString);
 			return itdRequest.DepartureMonitorRequest;
 		}
 

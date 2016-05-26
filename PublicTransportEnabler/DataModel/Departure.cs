@@ -8,9 +8,6 @@ namespace PublicTransportEnabler.DataModel
 		[XmlAttribute("countdown")]
 		public int Countdown { get; set; }
 
-		/*[XmlElement("itdDateTime")]
-		public RequestDateTime DateTime { get; set; }*/
-
 		[XmlElement("itdRTDateTime")]
 		public RequestDateTime RtDateTime { get; set; }
 

@@ -8,7 +8,7 @@ namespace PublicTransportEnabler.DataModel
 	public class Operator
 	{
 		[XmlElement("code")]
-		public int Code { get; set; }
+		public string Code { get; set; }
 
 		[XmlElement("name")]
 		public string Name { get; set; }

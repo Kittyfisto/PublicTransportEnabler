@@ -1,9 +1,7 @@
-﻿using System.Diagnostics;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace PublicTransportEnabler.DataModel
 {
-	[DebuggerDisplay("{StopId} - {StopName}")]
 	public class Location : Coordinate
 	{
 		[XmlAttribute("id")]
@@ -14,5 +12,10 @@ namespace PublicTransportEnabler.DataModel
 
 		[XmlAttribute("stopID")]
 		public int StopId { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("{0} - {1}", StopId, StopName);
+		}
 	}
 }

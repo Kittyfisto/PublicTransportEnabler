@@ -1,10 +1,8 @@
-﻿using System.Diagnostics;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace PublicTransportEnabler.DataModel
 {
 	[XmlType("itdServingLine")]
-	[DebuggerDisplay("{Number} - {Direction}")]
 	public class ServingLine
 	{
 		[XmlAttribute("key")]
@@ -75,5 +73,10 @@ namespace PublicTransportEnabler.DataModel
 
 		[XmlAttribute("index")]
 		public string Index { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("{0} - {1}", Number, Direction);
+		}
 	}
 }
