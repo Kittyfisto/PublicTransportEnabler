@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using PublicTransportEnabler.DataModel;
 using PublicTransportEnabler.Enum;
 using PublicTransportEnabler.Model;
@@ -14,14 +15,17 @@ namespace PublicTransportEnabler.Contract
 
 		bool HasCapabilities(IEnumerable<Capability> capabilities);
 
+		[Pure]
 		OuterCoordInfoRequest QueryNearbyStations(Location location, int maxDistance, int maxStations);
 
+		[Pure]
 		DepartureMonitorRequest QueryDepartures(int stationId, int maxDepartures, bool equivs);
 
 		StopFinderRequest AutocompleteStations(string constraint);
 
 		IEnumerable<Product> DefaultProducts();
 
+		[Pure]
 		TripRequest QueryConnections(Location from, Location via, Location to, DateTime date, bool dep,
 		                             int numConnections, List<Product> products, WalkSpeed walkSpeed,
 		                             Accessibility accessibility,

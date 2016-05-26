@@ -1209,15 +1209,7 @@ namespace PublicTransportEnabler
 			string resultString = WebClient.Scrape(uri.ToString(), httpPost ? parameters.Substring(1) : null,
 			                                       requestUrlEncoding, null, 3);
 
-
-			var serializer = new XmlSerializer(typeof (Request));
-
-			var itdRequest = serializer.Deserialize(new StringReader(resultString)) as Request;
-
-			if (itdRequest == null || itdRequest.DepartureMonitorRequest == null)
-				throw new Exception("Invalid XML");
-
-
+			var itdRequest = Request.Deserialize(resultString);
 			return itdRequest.TripRequest;
 		}
 

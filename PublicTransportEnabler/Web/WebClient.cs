@@ -129,14 +129,15 @@ namespace PublicTransportEnabler.Web
 
 		public string UrlEncode(string str)
 		{
-			return WebUtility.UrlEncode(str);
+			var value = WebUtility.UrlEncode(str);
+			return value;
 		}
 
 		public string UrlEncode(string str, string encoding)
 		{
-			//WebUtility.UrlEncode(str)
+			var value = WebUtility.UrlEncode(str);
+			return value;
 			//return System.Web.HttpUtility.UrlEncode(str, Encoding.GetEncoding(encoding));
-			return null;
 		}
 
 

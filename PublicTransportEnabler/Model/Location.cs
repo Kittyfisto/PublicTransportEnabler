@@ -61,6 +61,11 @@ namespace PublicTransportEnabler.Model
 			return new Location(type, id, lat, lon);
 		}
 
+		public static Location FromId(LocationType type, int id)
+		{
+			return new Location(type, id);
+		}
+
 		public bool HasId()
 		{
 			return Id != 0;

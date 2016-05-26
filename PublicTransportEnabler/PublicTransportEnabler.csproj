@@ -36,9 +36,9 @@
   <ItemGroup>
     <Compile Include="AbstractEfaProvider.cs" />
     <Compile Include="AbstractNetworkProvider.cs" />
-    <Compile Include="Contract\INetworkProvider.cs" />
-    <Compile Include="Contract\IWebClient.cs" />
-    <Compile Include="Contract\IQueryConnectionsContext.cs" />
+    <Compile Include="INetworkProvider.cs" />
+    <Compile Include="IWebClient.cs" />
+    <Compile Include="IQueryConnectionsContext.cs" />
     <Compile Include="DataModel\Address.cs" />
     <Compile Include="DataModel\AssignedStop.cs" />
     <Compile Include="DataModel\AssignedStopList.cs" />
