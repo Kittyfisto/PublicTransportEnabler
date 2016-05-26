@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PublicTransportEnabler</id>
+    <version>$version$</version>
+    <authors>Kittyfisto</authors>
+    <owners>Kittyfisto</owners>
+    <licenseUrl>https://github.com/Kittyfisto/PublicTransportEnabler/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Kittyfisto/PublicTransportEnabler/</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET API to access public transport information</description>
+    <releaseNotes>Alpha release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>.NET public transport</tags>
+    <dependencies>
+		<dependency id="Microsoft.Bcl" version="1.1.10" />
+		<dependency id="Microsoft.Bcl.Build" version="1.0.14" />
+		<dependency id="Microsoft.Net.Http" version="2.2.29" />
+      <!--<dependency id="SampleDependency" version="1.0" />-->
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\PublicTransportEnabler.dll" target="lib\net45\" />
+    <file src="..\bin\Release\PublicTransportEnabler.xml" target="lib\net45\" />
+    <file src="..\bin\Release\PublicTransportEnabler.pdb" target="lib\net45\" />
+  </files>
+</package>

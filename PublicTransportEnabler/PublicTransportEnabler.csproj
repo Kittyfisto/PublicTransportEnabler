@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6CA1047-C833-47C8-B7D9-CBC2FB5A7FFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PublicTransportEnabler</RootNamespace>
+    <AssemblyName>PublicTransportEnabler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile49</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PublicTransportEnabler.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AbstractEfaProvider.cs" />
+    <Compile Include="AbstractNetworkProvider.cs" />
+    <Compile Include="Contract\INetworkProvider.cs" />
+    <Compile Include="Contract\IWebClient.cs" />
+    <Compile Include="Contract\IQueryConnectionsContext.cs" />
+    <Compile Include="DataModel\Address.cs" />
+    <Compile Include="DataModel\AssignedStop.cs" />
+    <Compile Include="DataModel\AssignedStopList.cs" />
+    <Compile Include="DataModel\AttrElement.cs" />
+    <Compile Include="DataModel\Bicycle.cs" />
+    <Compile Include="DataModel\Car.cs" />
+    <Compile Include="DataModel\CommuterFares.cs" />
+    <Compile Include="DataModel\Coordinate.cs" />
+    <Compile Include="DataModel\CoordinateString.cs" />
+    <Compile Include="DataModel\CoordInfo.cs" />
+    <Compile Include="DataModel\CoordInfoFilterItem.cs" />
+    <Compile Include="DataModel\CoordInfoItem.cs" />
+    <Compile Include="DataModel\CoordInfoRequest.cs" />
+    <Compile Include="DataModel\Date.cs" />
+    <Compile Include="DataModel\DaysOfService.cs" />
+    <Compile Include="DataModel\Departure.cs" />
+    <Compile Include="DataModel\DepartureMonitorRequest.cs" />
+    <Compile Include="DataModel\DivaParameters.cs" />
+    <Compile Include="DataModel\DMDateTime.cs" />
+    <Compile Include="DataModel\Fare.cs" />
+    <Compile Include="DataModel\GenericTicket.cs" />
+    <Compile Include="DataModel\GenericTicketGroup.cs" />
+    <Compile Include="DataModel\Image.cs" />
+    <Compile Include="DataModel\IndividualTransport.cs" />
+    <Compile Include="DataModel\InfoLink.cs" />
+    <Compile Include="DataModel\InfoLinkList.cs" />
+    <Compile Include="DataModel\InfoText.cs" />
+    <Compile Include="DataModel\Itinerary.cs" />
+    <Compile Include="DataModel\ItOptions.cs" />
+    <Compile Include="DataModel\Location.cs" />
+    <Compile Include="DataModel\MapItem.cs" />
+    <Compile Include="DataModel\MeansElement.cs" />
+    <Compile Include="DataModel\MeansOfTransport.cs" />
+    <Compile Include="DataModel\Message.cs" />
+    <Compile Include="DataModel\NameElement.cs" />
+    <Compile Include="DataModel\NoTrain.cs" />
+    <Compile Include="DataModel\Odv.cs" />
+    <Compile Include="DataModel\OdvName.cs" />
+    <Compile Include="DataModel\OdvPlace.cs" />
+    <Compile Include="DataModel\Operator.cs" />
+    <Compile Include="DataModel\OuterCoordInfoRequest.cs" />
+    <Compile Include="DataModel\OutputClientText.cs" />
+    <Compile Include="DataModel\Parameter.cs" />
+    <Compile Include="DataModel\PartialRoute.cs" />
+    <Compile Include="DataModel\PathCoordinates.cs" />
+    <Compile Include="DataModel\Pedestrian.cs" />
+    <Compile Include="DataModel\PlaceElement.cs" />
+    <Compile Include="DataModel\Point.cs" />
+    <Compile Include="DataModel\PrintConfiguration.cs" />
+    <Compile Include="DataModel\PtOptions.cs" />
+    <Compile Include="DataModel\Range.cs" />
+    <Compile Include="DataModel\RBLControlled.cs" />
+    <Compile Include="DataModel\Request.cs" />
+    <Compile Include="DataModel\RequestDateTime.cs" />
+    <Compile Include="DataModel\ResTl.cs" />
+    <Compile Include="DataModel\Route.cs" />
+    <Compile Include="DataModel\Router.cs" />
+    <Compile Include="DataModel\SeqRoute.cs" />
+    <Compile Include="DataModel\ServingLine.cs" />
+    <Compile Include="DataModel\ServingTrip.cs" />
+    <Compile Include="DataModel\SingleTicket.cs" />
+    <Compile Include="DataModel\StopFinderRequest.cs" />
+    <Compile Include="DataModel\TariffZone.cs" />
+    <Compile Include="DataModel\Ticket.cs" />
+    <Compile Include="DataModel\Time.cs" />
+    <Compile Include="DataModel\TripDateTime.cs" />
+    <Compile Include="DataModel\TripOptions.cs" />
+    <Compile Include="DataModel\TripRequest.cs" />
+    <Compile Include="DataModel\UsedOptions.cs" />
+    <Compile Include="DataModel\Zone.cs" />
+    <Compile Include="Enum\Accessibility.cs" />
+    <Compile Include="Enum\Attr.cs" />
+    <Compile Include="Enum\Capability.cs" />
+    <Compile Include="Enum\LocationType.cs" />
+    <Compile Include="Enum\NetworkId.cs" />
+    <Compile Include="Enum\Option.cs" />
+    <Compile Include="Enum\Product.cs" />
+    <Compile Include="Enum\Shape.cs" />
+    <Compile Include="Enum\Status.cs" />
+    <Compile Include="Enum\Type.cs" />
+    <Compile Include="Enum\WalkSpeed.cs" />
+    <Compile Include="Model\Connection.cs" />
+    <Compile Include="Model\Currency.cs" />
+    <Compile Include="Model\Departure.cs" />
+    <Compile Include="Model\EquatableBase.cs" />
+    <Compile Include="Model\Fare.cs" />
+    <Compile Include="Model\Footway.cs" />
+    <Compile Include="Model\Line.cs" />
+    <Compile Include="Model\LineDestination.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\NearbyStationsResult.cs" />
+    <Compile Include="Model\Part.cs" />
+    <Compile Include="Model\Point.cs" />
+    <Compile Include="Model\QueryConnectionsResult.cs" />
+    <Compile Include="Model\QueryDeparturesResult.cs" />
+    <Compile Include="Model\ResultHeader.cs" />
+    <Compile Include="Model\StandardColors.cs" />
+    <Compile Include="Model\StationDepartures.cs" />
+    <Compile Include="Model\Stop.cs" />
+    <Compile Include="Model\Style.cs" />
+    <Compile Include="Model\Trip.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\MvvProvider.cs" />
+    <Compile Include="Provider\VrrProvider.cs" />
+    <Compile Include="Web\WebClient.cs" />
+    <Compile Include="Util\ProductHelper.cs" />
+    <None Include="packages.config" />
+    <None Include="Web\GzipWebClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

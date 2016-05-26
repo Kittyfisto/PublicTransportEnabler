@@ -1,0 +1,12 @@
+﻿namespace PublicTransportEnabler.Enum
+{
+	public enum Attr
+	{
+		CIRCLE_CLOCKWISE,
+		CIRCLE_ANTICLOCKWISE,
+		SERVICE_REPLACEMENT,
+		LINE_AIRPORT,
+		WHEEL_CHAIR_ACCESS,
+		BICYCLE_CARRIAGE
+	}
+}
