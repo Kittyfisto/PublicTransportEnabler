@@ -58,9 +58,9 @@ namespace PublicTransportEnabler.DataModel
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return string.Format("{0}/{1}/{2} - {3}:{4}",
-			                     Date.Day, Date.Month, Date.Year,
-			                     Time.Hour, Time.Minute);
+			return string.Format("{0} - {1}",
+			                     Date,
+								 Time);
 		}
 
 		private DateTime? ParseDateTime(string input)
