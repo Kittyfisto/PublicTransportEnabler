@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Xml.Serialization;
 
 namespace PublicTransportEnabler.DataModel
 {
 	[XmlType("itdTime")]
-	[DebuggerDisplay("{Hour}:{Minute}")]
 	public class Time
 	{
 		[XmlAttribute("hour")]
@@ -13,6 +11,11 @@ namespace PublicTransportEnabler.DataModel
 
 		[XmlAttribute("minute")]
 		public int Minute { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("{0}:{1}", Hour, Minute);
+		}
 
 		public TimeSpan ToTimeSpan()
 		{
